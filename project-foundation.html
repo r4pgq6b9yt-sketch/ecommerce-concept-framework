@@ -1,0 +1,244 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Foundation</title>
+<style>
+:root{
+--paper:#f4f1eb;
+--paper2:#ebe6dc;
+--ink:#121212;
+--muted:#6d675d;
+--line:rgba(18,18,18,.18);
+--dark:#111111;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:var(--paper);
+color:var(--ink);
+}
+a{text-decoration:none;color:inherit}
+img{width:100%;display:block}
+.nav{
+position:sticky;
+top:0;
+background:rgba(244,241,235,.9);
+backdrop-filter:blur(12px);
+border-bottom:1px solid var(--line);
+padding:18px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:50;
+}
+.nav-links{
+display:flex;
+gap:22px;
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:.08em;
+}
+.logo{
+font-size:14px;
+text-transform:uppercase;
+letter-spacing:.12em;
+}
+.hero{
+min-height:92vh;
+display:grid;
+grid-template-columns:1fr 1fr;
+}
+.hero-copy{
+padding:70px 56px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+.hero h1{
+font-size:clamp(56px,8vw,120px);
+line-height:.88;
+letter-spacing:-.08em;
+text-transform:uppercase;
+margin:0 0 24px;
+}
+.hero p{
+font-family:Georgia,serif;
+font-size:28px;
+max-width:620px;
+}
+.hero-image{
+border-left:1px solid var(--line);
+background:var(--paper2);
+}
+.hero-image img{
+height:100%;
+object-fit:cover;
+}
+.section{
+padding:80px 56px;
+border-top:1px solid var(--line);
+}
+.eyebrow{
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:.1em;
+margin-bottom:18px;
+color:var(--muted);
+}
+h2{
+font-size:clamp(42px,5vw,90px);
+line-height:.92;
+letter-spacing:-.06em;
+text-transform:uppercase;
+margin:0 0 24px;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+border-left:1px solid var(--line);
+border-top:1px solid var(--line);
+}
+.card{
+border-right:1px solid var(--line);
+border-bottom:1px solid var(--line);
+background:var(--paper);
+min-height:500px;
+}
+.card:hover{
+background:#fffaf2;
+}
+.card img{
+height:280px;
+object-fit:cover;
+border-top:1px solid var(--line);
+border-bottom:1px solid var(--line);
+}
+.card-content{
+padding:22px;
+}
+.card h3{
+margin:0;
+font-size:18px;
+text-transform:uppercase;
+}
+.card p{
+color:var(--muted);
+}
+.product{
+display:grid;
+grid-template-columns:1fr 1fr;
+min-height:100vh;
+}
+.product-image{
+padding:40px;
+background:var(--paper2);
+border-right:1px solid var(--line);
+display:flex;
+align-items:center;
+}
+.product-image img{
+box-shadow:0 25px 80px rgba(0,0,0,.12);
+}
+.product-copy{
+padding:70px 56px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+.lead{
+font-family:Georgia,serif;
+font-size:26px;
+max-width:720px;
+}
+.list{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:36px;
+margin-top:34px;
+padding-top:28px;
+border-top:1px solid var(--line);
+}
+ul{
+margin:0;
+padding-left:18px;
+}
+li{
+margin-bottom:8px;
+color:var(--muted);
+}
+.footer{
+padding:30px 56px;
+background:var(--dark);
+color:white;
+display:flex;
+justify-content:space-between;
+text-transform:uppercase;
+font-size:12px;
+letter-spacing:.08em;
+}
+.back{
+display:inline-block;
+margin-top:32px;
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:.08em;
+border-bottom:1px solid var(--ink);
+padding-bottom:3px;
+}
+@media(max-width:980px){
+.hero,.product,.grid,.list{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<a class="logo" href="index.html">Concept Store Framework</a>
+<div class="nav-links">
+<a href="index.html">Home</a>
+</div>
+</nav>
+
+<section class="product">
+<div class="product-image">
+<img src="assets/foundation.jpg">
+</div>
+
+<div class="product-copy">
+<div class="eyebrow">Framework Item 01</div>
+<h2>Project Foundation</h2>
+<p class="lead">Define the concept, shared intention and opportunity before products take over.</p>
+
+<div class="list">
+<div>
+<div class="eyebrow">Includes</div>
+<ul>
+<li>Project overview</li><li>Project vision</li><li>Opportunity notes</li><li>Partner alignment</li><li>Working notes</li>
+</ul>
+</div>
+
+<div>
+<div class="eyebrow">Outcome</div>
+<p>A clear strategic starting point.</p>
+</div>
+</div>
+
+<a class="back" href="index.html">Return to Framework</a>
+
+</div>
+</section>
+
+<footer class="footer">
+<span>Project Foundation</span>
+<span>E-Commerce Concept Approach</span>
+</footer>
+
+</body>
+</html>
